@@ -84,8 +84,8 @@ get_header(); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>		
 
 				<div class="one-work" onclick="document.location.href='<?php echo get_permalink(get_the_ID()); ?>'">
-					<h4><?php echo get_the_title(get_the_ID()); ?></h4>
-					<p class="work-desc" ><?php echo get_the_excerpt(get_the_ID()); ?></p>
+					<h4><?php echo get_the_title(); ?></h4>
+					<div class="work-desc" ><?php echo the_excerpt(); ?></div>
 					<span class="arrow-bt"></span>
 				</div>
 
