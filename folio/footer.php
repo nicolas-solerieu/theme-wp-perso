@@ -16,23 +16,18 @@
 		<div class="box">
 
 		<div class="footer-left">
-			<p>Nicolas Solerieu<br/>&copy; 
-			<?php 
-			$fromYear = 2012; 
-			$thisYear = (int)date('Y'); 
-			echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?>
-			- <a href="<?php echo get_permalink(76); ?>">Informations</a></p>
-		</div>
-
-		<div class="footer-center">
-			<p>Email<br/><a href="mailto:hello@solerieu-nicolas.fr">hello[at]solerieu-nicolas.fr</a></p>
+			<p>
+			Nicolas Solerieu Design
+			</p>
 		</div>
 
 		<div class="footer-right">
-			<p>Connect<br/>
-			<a href="https://twitter.com/slrncl" >Twitter</a>
-			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" >Linkedin</a>
-			<a href="https://www.pinterest.com/solerieunicolas/" >Pinterest</a>
+			<p>
+			<a href="mailto:hello@solerieu-nicolas.fr" target="_blank"><i class="fa fa-envelope-o"></i></a>
+			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<a href="https://www.behance.net/SLRNCL" target="_blank"><i class="fa fa-behance"></i></a>
+			<a href="https://dribbble.com/SLRNCL" target="_blank"><i class="fa fa-dribbble"></i></a>
+			<a href="<?php echo get_permalink(76); ?>" class="<?php if ( is_page( 76 ) ) { echo 'active'; } ?>">Informations</a>
 			</p>
 		</div>
 

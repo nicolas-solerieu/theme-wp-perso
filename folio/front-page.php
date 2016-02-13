@@ -14,46 +14,16 @@ get_header(); ?>
 	<div class="wrapper">
 		<div class="box">
 
-			<div class="intro-about">
 				<h4>Currently</h4>
 
 				<p class="headline">
 				<?php $theheadline = get_option( 'headline_full', false ); echo $theheadline;  ?>
 				</p>
 
-			</div>
-			
-			<div class="col-about first">
-				<h4>Clients</h4>
-				<p> 
-				Nobody's Perfekt Media<br/>
-				Mercedes Benz Financial<br/>
-				Goldenstein hall<br/>
-				BMW R&D Munich<br/>
-				Superwatch<br/>
-				Arts Square<br/>
-				</p>
-			</div>
-
-			<div class="col-about second">
-				<h4>Skills</h4>
-				<p> 
-				User interface<br/>
-				Web design<br/>
-				Wordpress development<br/>
-				UX/UI design<br/>
-				Front end development<br/>
-				Online advertising
-				</p>
-			</div>
-
-			<div class="col-about third">
-				<h4>Contact</h4>
-				<p> 
-				If you are interested in my services, or just want to talk about crazy projects, don't hesitate to get in touch.
-				</p>
-				<a href="<?php echo get_template_directory_uri(); ?>/files/nicolas-solerieu-en.pdf" class="contact-link" target="_blank">Download my resume</a>
-			</div>
+				<div class="bt-actions">
+					<a href="<?php echo get_template_directory_uri(); ?>/files/nicolas-solerieu-en.pdf" target="_blank">get my resume <i class="fa fa-file-pdf-o"></i></a>
+					<a href="mailto:hello@solerieu-nicolas.fr">send me a mail <i class="fa fa-paper-plane-o"></i></a>
+				</div>
 
 			<div class="clear"></div>
 
@@ -68,7 +38,7 @@ get_header(); ?>
 		<div class="box">
 
 			<div class="works-intro">
-				<h4>Selected works</h4>
+				<h4>SELECTED WORKS</h4>
 			</div>
 
 			<div class="work-list">
