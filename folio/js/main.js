@@ -30,13 +30,13 @@ $('.one-article__title').click(function(){
 // --------------------------------------------------------- //
 $('.responsive-menu-bt').click(function(){
   $('.site-nav').fadeIn(600);
-  $('.close-responsive-menu').show();
+  $('.close-responsive-menu-bt').show();
 });
 
 // --------------------------------------------------------- //
 // CLOSE APPSTORE FRAME
 // --------------------------------------------------------- //
-$('.close-responsive-menu').click(function(){
+$('.close-responsive-menu-bt').click(function(){
   $('.site-nav').fadeOut(300);
-  $('.close-responsive-menu').hide();
+  $('.close-responsive-menu-bt').hide();
 });
