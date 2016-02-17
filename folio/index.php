@@ -30,8 +30,14 @@ get_header(); ?>
 <section class="content-page">
 	<div class="wrapper">
 
+	<div class="journal-intro">
+		<h4>ARCHIVE</h4>
+	</div>
+
 <?php 
-	$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 99); 
+	
+	$counter = 0;
+	$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 9); 
 	$loop = new WP_Query( $args );
 	?>
 
@@ -39,16 +45,28 @@ get_header(); ?>
 
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-		<div class="box">
+		<?php $counter++; ?>
 
-			<h4><?php echo get_the_title(get_the_ID()); ?></h4>
-			<div class="entry-content"><?php the_content(); ?></div>
+		<div class="one-article" >
+
+			<div class="one-article__title <?php if ( $counter == 1 ) { echo 'unwrapped'; } ?>" >
+				<p><?php the_date('m/Y'); ?></p>
+				<h4><?php the_title(); ?></h4>
+				
+				<i class="fa fa-angle-down"></i>
+			</div>
+
+			<div class="one-article__content" <?php if ( $counter == 1 ) { echo "style='display:block'"; } ?>>
+				<div class="entry-content"><?php the_content(); ?></div>
+			</div>
 
 		</div>
 
  	<?php endwhile; ?>
 
-<?php } ?>
+	<?php } ?>
+	
+
 <?php wp_reset_query(); ?>
 
 	</div>

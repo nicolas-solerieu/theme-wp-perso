@@ -36,8 +36,7 @@ get_header(); ?>
 		<div class="box">
 		
 <?php
-
-	$args = array( 'post_type' => 'shot', 'order' => 'DESC', 'posts_per_page' => 99); 
+	$args = array( 'post_type' => 'shot', 'order' => 'DESC', 'posts_per_page' => 10); 
 	$loop = new WP_Query( $args );
 	?>
 
@@ -49,7 +48,7 @@ get_header(); ?>
 
 		<a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" class="lightbox gallery-item" title="<?php echo get_the_title(); ?>">
 			<figure>
-				<?php the_post_thumbnail('full'); ?>
+				<?php the_post_thumbnail('medium',''); ?>
 				<figcaption>
 					<p><?php echo get_the_date(); ?></p>
 					<h4><?php echo get_the_title(); ?></h4>
@@ -61,7 +60,8 @@ get_header(); ?>
 
  	<?php endwhile; ?>
 
-<?php } ?>
+	<?php } ?>
+
 <?php wp_reset_query(); ?>
 
 		<div class="clear"></div>

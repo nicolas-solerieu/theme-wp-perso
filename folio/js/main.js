@@ -6,25 +6,23 @@ $(document).ready(function() {
   // MAGNIFIC POPUP
   $('.lightbox').magnificPopup({
     type: 'image',
-    mainClass: 'mfp-with-zoom', 
+    mainClass: 'mfp-fade', 
 
     // Gallery mode
     gallery:{
       enabled:true
     },
 
-    // Zoom mode
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function(openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-
   });
 
+});
+
+// --------------------------------------------------------- //
+// OPEN RESPONSIVE MENU
+// --------------------------------------------------------- //
+$('.one-article__title').click(function(){
+  $(this).next().slideToggle(600);
+  $(this).toggleClass('unwrapped');
 });
 
 // --------------------------------------------------------- //
