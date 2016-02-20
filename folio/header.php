@@ -58,7 +58,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" >
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 
 	<meta name="google-site-verification" content="LonFqDfWq0PYU-ZlJjbgeGv5DbSt82PckdamnNw8Gwk" />
 
@@ -106,7 +106,7 @@
 		<!-- HEADER RIGHT -->
 		<nav class="site-nav">
 			<div class="close-responsive-menu-bt"><i class="fa fa-times close-bt"></i></div>
-			<div class="responsive-menu-label">Menu</div>
+			<div class="responsive-menu-label">Explore</div>
 			<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
 			<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
 			<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>

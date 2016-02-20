@@ -11,6 +11,7 @@ function myThemeRegisterSettings() {
     register_setting( 'theme_options', 'personal_name' );
     register_setting( 'theme_options', 'job_label' );
     register_setting( 'theme_options', 'headline_full' );
+    register_setting( 'theme_options', 'intro_text' );
 }
 add_action( 'admin_init', 'myThemeRegisterSettings' );
 
@@ -68,9 +69,13 @@ function myThemeSettingsPage() {
 
                                 <hr/>
                                 
-                                <h4>Headline text</h4>
-                                <textarea id="headline_full" rows="10" name="headline_full" style="width:100%;display:block;padding:5px" ><?php echo get_option( 'headline_full' ); ?></textarea>
+                                <h4>Headline</h4>
+                                <textarea id="headline_full" rows="5" name="headline_full" style="width:100%;display:block;padding:5px" ><?php echo get_option( 'headline_full' ); ?></textarea>
                                 <p>Fill up the text area to complete the headline block of homepage</p>
+
+                                <h4>Introduction text</h4>
+                                <textarea id="intro_text" rows="5" name="intro_text" style="width:100%;display:block;padding:5px" ><?php echo get_option( 'intro_text' ); ?></textarea>
+                                <p>Fill up the text area to complete the text under the headline block of homepage</p>
 
                             </table>
                         </div>

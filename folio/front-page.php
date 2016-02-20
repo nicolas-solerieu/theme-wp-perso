@@ -14,16 +14,12 @@ get_header(); ?>
 	<div class="wrapper">
 		<div class="box">
 
-				<h4>Currently</h4>
-
-				<p class="headline">
-				<?php $theheadline = get_option( 'headline_full', false ); echo $theheadline;  ?>
-				</p>
-
-				<div class="bt-actions">
-					<a href="<?php echo get_template_directory_uri(); ?>/files/nicolas-solerieu-en.pdf" target="_blank">get my resume <i class="fa fa-file-pdf-o"></i></a>
-					<a href="mailto:hello@solerieu-nicolas.fr">send me a mail <i class="fa fa-paper-plane-o"></i></a>
-				</div>
+			<p class="headline">
+			<?php $headline_full = get_option( 'headline_full', false ); echo $headline_full;  ?>
+			</p>
+			<p class="intro-text">
+			<?php $intro_text = get_option( 'intro_text', false ); echo $intro_text;  ?>
+			</p>
 
 			<div class="clear"></div>
 
