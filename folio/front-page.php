@@ -71,8 +71,8 @@ get_header(); ?>
 <section class="capabilities">
 	<div class="wrapper">
 		<div class="box">
-			<h4>Design + Code</h4>
-			<p>I design apps UI and website layouts. I use Photoshop for 3 years and recently I get to Sketch. You can check out my case studies on <a href="https://www.behance.net/SLRNCL" target="_blank">Behance</a>. I solve UX problems and create meaningful designs to promote products and services. All of my designs featured original concepts and high quality standards. I'm used to wordpress and open to new challenges. I'm always keen on new challenges and keep a close eye on design trends and new technologies.</p> 
+			<h4>This is what I do...</h4>
+			<p>I design apps UI and website layouts using photoshop and sketch. All of my designs featured original concepts and high quality standards. I'm used to wordpress, Craft CMS, Kirby and open to new challenges. Everyday I code CSS, HTML, PHP and of course javascript. You can check out my <a href="https://www.behance.net/SLRNCL" target="_blank">Behance page</a> or review a few lines of code on <a href="https://github.com/nicolas-solerieu">Github</a>.</p> 
 		</div>
 	</div>
 </section>

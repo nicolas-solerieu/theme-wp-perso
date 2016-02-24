@@ -57,8 +57,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" >
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 
 	<meta name="google-site-verification" content="LonFqDfWq0PYU-ZlJjbgeGv5DbSt82PckdamnNw8Gwk" />
 
