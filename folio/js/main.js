@@ -29,7 +29,7 @@ $('.one-article__title').click(function(){
 // OPEN RESPONSIVE MENU
 // --------------------------------------------------------- //
 $('.responsive-menu-bt').click(function(){
-  $('.site-nav').fadeIn(600);
+  $('.site-nav').addClass('opened');
   $('.close-responsive-menu-bt').show();
 });
 
@@ -37,6 +37,6 @@ $('.responsive-menu-bt').click(function(){
 // CLOSE APPSTORE FRAME
 // --------------------------------------------------------- //
 $('.close-responsive-menu-bt').click(function(){
-  $('.site-nav').fadeOut(300);
+  $('.site-nav').removeClass('opened');
   $('.close-responsive-menu-bt').hide();
 });

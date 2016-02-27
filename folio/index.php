@@ -57,7 +57,8 @@ get_header(); ?>
 			</div>
 
 			<div class="one-article__content" <?php if ( $counter == 1 ) { echo "style='display:block'"; } ?>>
-				<div class="entry-content"><?php the_content(); ?></div>
+				<div class="entry-content"><?php the_excerpt(); ?></div>
+				<a href="<?php echo get_permalink(); ?>">Read this</a>
 			</div>
 
 		</div>

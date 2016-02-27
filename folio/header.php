@@ -113,7 +113,7 @@
 			<div class="nav-resp-contact">
 				<p>
 					Say hi or hire ?<br/>
-					<a href="mailto:solerieunicolas@gmail.com">solerieunicolas@gmail.com</a>
+					<a href="mailto:solerieunicolas@gmail.com">hello@solerieu-nicolas.fr</a>
 				</p>
 			</div>
 		</nav>

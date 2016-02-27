@@ -134,7 +134,6 @@ h5 {
   font-size: 14px;
   line-height: 100px;
   color: #999999;
-  text-transform: uppercase;
   border-bottom: 2px solid transparent;
   transition:all ease 0.3s;
   -webkit-transition:all ease 0.3s;
@@ -367,6 +366,45 @@ h5 {
 .one-article__content {
   display: none;
   padding: 20px 0 0 0;
+}
+.user-section {
+  padding: 30px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.user-face {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.user-face img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.user-infos {
+  float: left;
+}
+.user-infos .user-name {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
+}
+.user-infos .user-name a {
+  font-size: 13px;
+}
+.user-infos .user-detail {
+  margin: 0;
+  font-size: 13px;
+  color: #777777;
+}
+.bt-back {
+  float: right;
+  height: 60px;
+  line-height: 60px;
 }
 
 /* -------------------------------------------------------------- 
@@ -616,14 +654,28 @@ p {
   z-index: 9;
   float: none;
   position: fixed;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  transition:all ease 0.3s;
+  -webkit-transition:all ease 0.3s;
+  -moz-transition:all ease 0.3s;
+  -o-transition:all ease 0.3s;
+}
+.site-nav.opened {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
 }
 .site-nav-link {
   display: inline-block;
   width: 100%;
   height: auto;
   line-height: normal;
-  text-transform: none;
   border-bottom: 1px solid #f0f0f0;
   font-size: 17px;
   margin: 0;
