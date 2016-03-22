@@ -57,7 +57,6 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" >
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 
 	<meta name="google-site-verification" content="LonFqDfWq0PYU-ZlJjbgeGv5DbSt82PckdamnNw8Gwk" />
 
@@ -88,40 +87,27 @@
 
 <!-- HEADER -->
 <header class="site-header">
-	<div class="wrapper">
-		<div class="box">
 
-		<!-- HEADER LEFT -->
-		<div class="site-infos" onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="Nicolas Solerieu" alt="Nicolas logo" class="logo">
-			<div class="infos">
-				<h1 class="site-name"><?php $myname = get_option( 'personal_name', false ); echo $myname;  ?></h1>
-				<h2 class="job-title"><?php $myjob = get_option( 'job_label', false ); echo $myjob;  ?></h2>
-			</div>
-		</div>
-
-		<div class="responsive-menu-bt"><i class="fa fa-bars burger-bt"></i></div>
-
-		<!-- HEADER RIGHT -->
-		<nav class="site-nav">
-			<div class="close-responsive-menu-bt"><i class="fa fa-times close-bt"></i></div>
-			<div class="responsive-menu-label">Explore</div>
-			<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
-			<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
-			<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
-			<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
-			<div class="nav-resp-contact">
-				<p>
-					Say hi or hire ?<br/>
-					<a href="mailto:solerieunicolas@gmail.com">hello@solerieu-nicolas.fr</a>
-				</p>
-			</div>
-		</nav>
-		
-		<div class="clear"></div>
-		</div>
+	<div class="site-infos" onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo">
 	</div>
+
+	<div class="menu-bt"><i class="fa fa-bars burger-bt"></i></div>
+
 </header>
+
+<!-- HEADER RIGHT -->
+<nav class="site-nav">
+	<div class="close-menu-bt"><i class="fa fa-times close-bt"></i></div>
+	<div class="menu-label">Explore</div>
+	<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
+	<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
+	<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
+	<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
+	<a class="site-nav-link <?php if ( is_page( 239 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(239); ?>" >Contact</a>
+</nav>
+
+<div class="overlay-black"></div>
 
 <!-- MAIN -->
 <main class="main-wrap">

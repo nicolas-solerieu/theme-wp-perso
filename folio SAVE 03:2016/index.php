@@ -27,7 +27,7 @@ get_header(); ?>
 </section>
 
 <!-- ARTICLES -->
-<section class="post-list">
+<section class="content-page">
 	<div class="wrapper">
 
 	<div class="journal-intro">

@@ -27,16 +27,10 @@ get_header(); ?>
 </section>
 
 <!-- ARTICLES -->
-<section class="content-page">
+<section class="journal-feed">
 	<div class="wrapper">
 
-	<div class="journal-intro">
-		<h4>ARCHIVE</h4>
-	</div>
-
-<?php 
-	
-	$counter = 0;
+	<?php
 	$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 9); 
 	$loop = new WP_Query( $args );
 	?>
@@ -45,20 +39,17 @@ get_header(); ?>
 
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-		<?php $counter++; ?>
-
 		<div class="one-article" >
 
-			<div class="one-article__title <?php if ( $counter == 1 ) { echo 'unwrapped'; } ?>" >
+			<div class="one-article__title" >
 				<p><?php the_date('m/Y'); ?></p>
 				<h4><?php the_title(); ?></h4>
-				
-				<i class="fa fa-angle-down"></i>
+				<div class="clear"></div>
 			</div>
 
-			<div class="one-article__content" <?php if ( $counter == 1 ) { echo "style='display:block'"; } ?>>
+			<div class="one-article__content" >
 				<div class="entry-content"><?php the_excerpt(); ?></div>
-				<a href="<?php echo get_permalink(); ?>">Continue reading...</a>
+				<a href="<?php echo get_permalink(); ?>">Continue reading</a>
 			</div>
 
 		</div>

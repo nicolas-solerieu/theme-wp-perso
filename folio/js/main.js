@@ -28,15 +28,19 @@ $('.one-article__title').click(function(){
 // --------------------------------------------------------- //
 // OPEN RESPONSIVE MENU
 // --------------------------------------------------------- //
-$('.responsive-menu-bt').click(function(){
+$('.menu-bt').click(function(){
   $('.site-nav').addClass('opened');
-  $('.close-responsive-menu-bt').show();
+  $('.overlay-black').addClass('displayed');
 });
 
 // --------------------------------------------------------- //
 // CLOSE APPSTORE FRAME
 // --------------------------------------------------------- //
-$('.close-responsive-menu-bt').click(function(){
+$('.close-menu-bt').click(function(){
   $('.site-nav').removeClass('opened');
-  $('.close-responsive-menu-bt').hide();
+  $('.overlay-black').removeClass('displayed');
+});
+$('.overlay-black').click(function(){
+  $('.site-nav').removeClass('opened');
+  $('.overlay-black').removeClass('displayed');
 });

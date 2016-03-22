@@ -33,7 +33,7 @@ Version: 1.0
   background: #2878ff;
 }
 body {
-  background: #ffffff;
+  background: #f5f5f5;
   font-family: 'Roboto', sans-serif;
 }
 #page {
@@ -67,7 +67,7 @@ figure {
   margin: 0 auto;
 }
 .box {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .content-404 .box {
   padding: 60px 0;
@@ -103,9 +103,8 @@ h4 {
 }
 h5 {
   color: #333333;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin: 15px 0 30px 0;
+  font-size: 1em;
+  margin: 15px 0;
 }
 
 /* -------------------------------------------------------------- 
@@ -114,8 +113,7 @@ h5 {
 .site-header {
   width: 100%;
   height: auto;
-  padding: 20px 0;
-  background: #121212;
+  padding: 50px 0 20px 0;
 }
 .site-header .box {
   padding: 0;
@@ -134,7 +132,7 @@ h5 {
   margin: 30px 0 30px 30px;
   font-size: 16px;
   line-height: 40px;
-  color: #ffffff;
+  color: #999999;
   border-bottom: 2px solid transparent;
   transition:all ease 0.3s;
   -webkit-transition:all ease 0.3s;
@@ -220,39 +218,20 @@ h5 {
   cursor: pointer;
 }
 
-/* -------------------------------------------------------------- 
-/* =SECTIONS
--------------------------------------------------------------- */
-.content-page {
-  background: #f0f0f0;
-}
-.content-about-page{
-  background: #ffffff;
-}
-.content-work-page{
-  background: #ffffff;
-}
-.article-page {
-  background: #ffffff;
-}
-.capabilities {
-  background: #f0f0f0;
-}
+
 
 /* -------------------------------------------------------------- 
 /* =INTRO - ABOUT
 -------------------------------------------------------------- */
-.about {
-  background: #121212;
-}
 .about .box {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 .headline {
   font-size: 2.8em;
   font-weight: 400;
   margin: 0 0 30px 0;
-  color: #ffffff;
+  line-height: 140%;
+  color: #333333;
 }
 .headline a {
   -webkit-box-shadow: none;
@@ -335,93 +314,92 @@ h5 {
 /* -------------------------------------------------------------- 
 /* =JOURNAL
 -------------------------------------------------------------- */
-.post-list {
-  padding: 20px 0 60px 0;
-  background: #ffffff;
-}
 .journal-intro h4 {
-	font-size: 12px;
-	padding: 40px 0 15px 0;
-	letter-spacing: 2px;
+  font-size: 12px;
+  margin: 40px 0 15px 0;
 }
 .one-article {
-	padding: 20px 0;
-	border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 30px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
 .one-article__title {
-	cursor: pointer;
+  cursor: pointer;
 }
 .one-article__title::after {
-	clear: both;
-	content: "";
-	display: block;
+  clear: both;
+  content: "";
+  display: block;
 }
 .one-article__title h4 {
-	display: inline-block;
-	float: left;
-	height: 40px;
-	line-height: 40px;
-	margin: 0;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
 }
 .one-article__title p {
-	display: inline-block;
-	float: left;
-	margin: 0 35px 0 0;
-	height: 40px;
-	line-height: 40px;
-	color: #999999;
-	font-size: 13px;
+  display: inline-block;
+  float: left;
+  margin: 0 35px 0 0;
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  font-size: 13px;
 }
 .one-article__title i {
-	display: inline-block;
-	float: right;
-	margin: 0;
-	color: #333;
-	font-size: 17px;
-	height: 40px;
-	line-height: 40px;
-	transition:all ease 0.3s;
-	-webkit-transition:all ease 0.3s;
-	-moz-transition:all ease 0.3s;
-	-o-transition:all ease 0.3s;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  color: #333;
+  font-size: 17px;
+  height: 40px;
+  line-height: 40px;
+  transition:all ease 0.3s;
+  -webkit-transition:all ease 0.3s;
+  -moz-transition:all ease 0.3s;
+  -o-transition:all ease 0.3s;
 }
 .one-article__title.unwrapped i {
-	transform:rotate(180deg);
-	-webkit-transform:rotate(180deg);
-	-moz-transform:rotate(180deg);
+  transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
 }
 .one-article__content {
-	display: none;
-	padding: 20px 0 0 0;
+  display: none;
+  padding: 20px 0 0 0;
+}
+.one-article__content a {
+  display: inline-block;
+  margin: 0 0 10px 0;
 }
 .user-section {
-	padding: 50px 0;
-	background: #f0f0f0;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
 .user-face {
-	height: 60px;
-	width: 60px;
-	border-radius: 50%;
-	overflow: hidden;
-	float: left;
-	margin: 0 20px 0 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin: 0 20px 0 0;
 }
 .user-face img {
-	width: 100%;
-	display: block;
-	height: auto;
+  width: 100%;
+  display: block;
+  height: auto;
 }
 .user-infos {
-	float: left;
+  float: left;
 }
 .user-infos .user-name {
-	margin: 5px 0 0 0;
-	font-weight: bold;
-	color: #333333;
-	font-size: 16px;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
 }
 .user-infos .user-name a {
-	font-size: 13px;
+  font-size: 13px;
 }
 .user-infos .user-detail {
   margin: 0;
@@ -441,7 +419,6 @@ h5 {
     float: left;
     width: 48%;
     margin: 0 0 20px 0;
-    background: #ffffff;
 }
 .one-shot:nth-child(2n) {
 	margin: 0 0 20px 4%;
@@ -510,12 +487,8 @@ h5 {
 /* -------------------------------------------------------------- 
 /* =WORKS
 -------------------------------------------------------------- */
-.works {
-  padding: 30px 0;
-}
 .works-intro h4 {
-	font-size: 12px;
-	letter-spacing: 2px;
+  font-size: 12px;
 }
 .work-list {
   border-top: 1px solid rgba(0,0,0,0.05);
@@ -607,20 +580,17 @@ h5 {
 /* -------------------------------------------------------------- 
 /* =FOOTER
 -------------------------------------------------------------- */
-footer {
-  background: #121212;
-}
 footer .box {
   border-top: 1px solid rgba(0,0,0,0.05);
-  padding: 60px 0;
+  padding: 40px 0 60px 0;
 }
 .footer-left {
   float: left;
   width: 50%;
 }
-footer span.copy {
+footer span {
   font-size: 14px;
-  color: #333333;
+  color: #888888;
   margin: 0;
   display: inline-block;
 }
@@ -637,7 +607,7 @@ footer span a {
 .footer-right a {
   display: inline-block;
   margin: 0 0 0 15px;
-  color: #333333;
+  color: #999999;
   font-size: 20px;
 }
 .footer-right a:hover {
@@ -658,10 +628,7 @@ footer span a {
   margin: 0 7%;
 }
 .about .box {
-  padding: 30px 0 70px 0;
-}
-.box {
-  padding: 20px 0;
+  padding: 40px 0 0 0;
 }
 .responsive-menu-bt {
   display: block;
@@ -730,13 +697,9 @@ p {
 .headline {
   font-size: 2em;
   margin: 0 0 20px 0;
-  line-height: 130%;
 }
 .intro-text{
   margin: 0;
-}
-.works {
-  padding: 0;
 }
 .one-work h4 {
   width: 100%;
@@ -783,9 +746,6 @@ h3 {
   font-size: 1.2em;
   margin: 0 0 15px 0;
 }
-.shots {
-  padding: 20px 0;
-}
 .one-shot {
   width: 100%;
   margin: 0 0 20px 0;
@@ -801,9 +761,7 @@ h3 {
 footer .box {
   padding: 20px 0;
 }
-.journal-intro h4 {
-  padding: 0 0 15px 0;
-}
+
 
 }
 
