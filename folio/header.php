@@ -52,6 +52,9 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+
 	<!-- CSS Zone -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css" >
