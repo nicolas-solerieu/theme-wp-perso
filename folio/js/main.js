@@ -7,14 +7,17 @@ $(document).ready(function() {
   $('.lightbox').magnificPopup({
     type: 'image',
     mainClass: 'mfp-fade', 
-
     // Gallery mode
     gallery:{
       enabled:true
     },
-
   });
 
+});
+
+$(window).load(function() {
+  $('.home #page').addClass('loaded');
+  $('.site-header').addClass('displayed');
 });
 
 // --------------------------------------------------------- //

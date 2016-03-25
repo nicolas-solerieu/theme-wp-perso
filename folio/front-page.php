@@ -16,7 +16,6 @@ get_header(); ?>
 		<h2 class="job-title"><?php $myjob = get_option( 'job_label', false ); echo $myjob;  ?></h2>
 		<p class="headline"><?php $headline_full = get_option( 'headline_full', false ); echo $headline_full;  ?></p>
 		<p class="intro-text"><?php $intro_text = get_option( 'intro_text', false ); echo $intro_text;  ?></p>
-
 		<div class="clear"></div>
 	</div>
 </section>
@@ -26,7 +25,7 @@ get_header(); ?>
 <section class="works">
 	<div class="wrapper">
 		
-		<p class="label-works">Some projects</p>
+		<p class="label-works">Selected works</p>
 		<div class="work-list">
 		<?php
 			$counter = 0;

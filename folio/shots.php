@@ -53,7 +53,7 @@ get_header(); ?>
 					<?php the_post_thumbnail('large',''); ?>
 				</div>
 				<figcaption>
-					<h4><?php echo get_the_title(); ?></h4>
+					<h3><?php echo get_the_title(); ?></h3>
 				</figcaption>
 			</figure>
 		</a>

@@ -42,9 +42,8 @@ get_header(); ?>
 		<div class="one-article" >
 
 			<div class="one-article__title" >
-				<p><?php the_date('m/Y'); ?></p>
-				<h4><?php the_title(); ?></h4>
-				<div class="clear"></div>
+				<p><?php the_date('j F Y'); ?></p>
+				<h3><?php the_title(); ?></h3>
 			</div>
 
 			<div class="one-article__content" >
