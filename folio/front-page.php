@@ -42,7 +42,6 @@ get_header(); ?>
 			<div class="one-work" onclick="document.location.href='<?php echo get_permalink(get_the_ID()); ?>'">
 				<span class="number" >0<?php echo $counter; ?>.</span>
 				<h4><?php echo get_the_title(); ?></h4>
-				&nbsp;&bull;&nbsp;
 				<div class="work-desc" ><?php echo get_the_excerpt(); ?></div>
 			</div>
 

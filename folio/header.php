@@ -26,8 +26,8 @@
 
     <!-- User agent / Viewport / compression -->
     <meta http-equiv="content-encoding" content="gzip, deflate">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -90,13 +90,11 @@
 
 <!-- HEADER -->
 <header class="site-header">
-
 	<div class="site-infos" onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo">
 	</div>
 
 	<div class="menu-bt"><i class="fa fa-bars burger-bt"></i></div>
-
 </header>
 
 <!-- HEADER RIGHT -->

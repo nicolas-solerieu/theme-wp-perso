@@ -23,14 +23,6 @@ $(window).load(function() {
 // --------------------------------------------------------- //
 // OPEN RESPONSIVE MENU
 // --------------------------------------------------------- //
-$('.one-article__title').click(function(){
-  $(this).next().slideToggle(600);
-  $(this).toggleClass('unwrapped');
-});
-
-// --------------------------------------------------------- //
-// OPEN RESPONSIVE MENU
-// --------------------------------------------------------- //
 $('.menu-bt').click(function(){
   $('.site-nav').addClass('opened');
   $('.overlay-black').addClass('displayed');

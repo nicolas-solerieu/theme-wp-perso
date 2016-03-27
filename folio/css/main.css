@@ -39,21 +39,11 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 1em;
 }
-body.home {
-  background: #121212 url('../img/bg.jpg') center no-repeat;
+/*body.home {
+  background: #f9f9f9 url('../img/bg-home.jpg') center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-body.home #page {
-  background: rgba(0,0,0,0);
-  padding: 40px 0 0 0;
-  opacity: 0;
-}
-body.home #page.loaded {
-  background: rgba(0,0,0,0.5);
-  padding: 0;
-  opacity: 1;
-}
+}*/
 #page {
   z-index: 4;
   position: relative;
@@ -81,7 +71,7 @@ figure {
   display: none;
 }
 .wrapper {
-  width: 700px;
+  width: 860px;
   margin: 0 auto;
 }
 .box {
@@ -91,7 +81,7 @@ figure {
   padding: 60px 0;
 }
 .content-page {
-  padding: 150px 0 100px 0; 
+  padding: 220px 0 100px 0; 
 }
 
 /* -------------------------------------------------------------- 
@@ -161,16 +151,21 @@ ul li {
 .site-header {
   width: 100%;
   height: auto;
-  padding: 0 30px;
+  padding: 40px 30px;
   top: -30px;
   left: 0;
   position: fixed;
   z-index: 9;
   opacity: 0;
-  -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  -moz-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  -o-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -o-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .site-header.displayed {
   top: 0;
@@ -178,21 +173,19 @@ ul li {
 }
 /* TOP LEFT SITE INFOS */
 .site-infos {
-  height: 100px;
+  height: 40px;
   float: left;
   position: relative;
   cursor: pointer;
 }
 .site-infos:hover .logo {
-  opacity: 0.95;
+  opacity: 0.5;
 }
 .site-infos .logo {
   width: auto;
   height: 40px;
-  opacity: 0.6;
-  float: left;
   position: relative;
-  margin: 30px 0;
+  margin: 0;
   transition:all ease 0.3s;
   -webkit-transition:all ease 0.3s;
   -moz-transition:all ease 0.3s;
@@ -245,6 +238,8 @@ ul li {
   display: inline-block;
   margin: 0;
   width: 100%;
+  font-size: 22px;
+  font-family: "Lora",sans-serif;
   padding: 15px 0;
   color: #999999;
   transition:all ease 0.3s;
@@ -259,19 +254,19 @@ ul li {
   color: #e74c3c;
 }
 .menu-label {
-	font-size: 17px;
+	font-size: 12px;
+  letter-spacing: 3px;
 	font-weight: bold;
+  text-transform: uppercase;
 	color: #333333;
 	margin: 0 0 30px 0;
-  font-family: 'Lora', sans-serif;
 }
 .menu-bt {
-  position: relative;
   cursor: pointer;
   float: right;
-  height: 100px;
-  line-height: 100px;
-  margin: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
   font-size: 21px;
   width: 18px;
   color: #666666;
@@ -297,7 +292,7 @@ ul li {
 /* =INTRO - ABOUT
 -------------------------------------------------------------- */
 .about {
-  padding: 200px 0 40px 0;
+  padding: 220px 0 70px 0;
 }
 h1.site-name {
   font-size: 19px;
@@ -305,7 +300,7 @@ h1.site-name {
   font-family: 'Lora', sans-serif;
   display: inline-block;
   margin: 0;
-  color: #ffffff;
+  color: #333333;
   position: relative;
 }
 h2.job-title {
@@ -318,11 +313,11 @@ h2.job-title {
   color: #999999;
 }
 .headline {
-  font-size: 82px;
+  font-size: 62px;
   font-family: 'Roboto', sans-serif;
-  line-height: 110%;
+  line-height: 1.3;
   font-weight: 700;
-  color: #ffffff;
+  color: #333333;
   margin: 40px 0;
 }
 .intro-text {
@@ -437,6 +432,10 @@ h2.job-title {
 }
 .one-article__content a:hover {
 	opacity: 0.5;
+}
+.article-name {
+  color: #333333;
+  font-size: 2.4em;
 }
 .user-section {
   padding: 30px 0;
@@ -565,9 +564,9 @@ h2.job-title {
   padding: 0 0 150px 0;
 }
 .label-works {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Roboto",sans-serif;
-  margin: 0 0 10px 0;
+  margin: 0 0 30px 0;
   font-weight: 900;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -606,7 +605,8 @@ h2.job-title {
   margin: 0;
   font-size:1.6em;
   text-transform: none;
-  color: #ffffff;
+  letter-spacing: normal;
+  color: #333333;
   display: inline-block;
   transition:all ease 0.3s;
 }
@@ -614,7 +614,7 @@ h2.job-title {
   color: #e74c3c;
 }
 .one-work .work-desc {
-  margin: 0;
+  margin: 0 0 0 10px;
   font-size:1.2em;
   color: #666666;
   display: inline-block;
@@ -671,10 +671,10 @@ p {
   font-size: 14px;
 }
 .headline {
-  font-size:36px;
+  font-size:26px;
   margin: 40px 0;
 }
-.intro-text{
+.intro-text {
   margin: 0 0 30px 0;
 }
 .big-text {
@@ -717,7 +717,7 @@ h3 {
   width: 100%;
   height: auto;
   position: absolute;
-  padding: 0 25px;
+  padding: 30px 20px;
 }
 .site-nav {
 	padding: 50px;

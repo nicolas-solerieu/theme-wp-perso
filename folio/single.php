@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<h4>You're about to read.</h4>
-			<p class="big-text"><?php the_title(); ?></p>
+			<p class="article-name"><?php the_title(); ?></p>
 			<div class="entry-content"><?php the_content(); ?></div>
 
 			<?php endwhile; ?>
