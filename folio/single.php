@@ -11,7 +11,7 @@ get_header(); ?>
 
 <!-- CONTENT -->
 <section class="content-page">
-	<div class="wrapper">
+	<div class="thin-wrapper">
 		<div class="box">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -30,7 +30,7 @@ get_header(); ?>
 			</div>
 			<div class="user-infos">
 				<p class="user-name">Nicolas Solerieu <a href="https://twitter.com/SLRNCL">@SLRNCL</p>
-				<p class="user-detail">French / Designer / Runner / Pessimist</p>
+				<p class="user-detail">French, Designer, Runner, Pessimist</p>
 			</div>
 
 			<a href="<?php echo get_permalink(43); ?>" class="bt-back">Back to the journal <i class="fa fa-angle-right"></i></a>

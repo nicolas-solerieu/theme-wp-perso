@@ -94,12 +94,12 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo">
 	</div>
 
-	<div class="menu-bt"><i class="fa fa-bars burger-bt"></i></div>
+	<div class="menu-bt"><img src="<?php echo get_template_directory_uri(); ?>/img/menu-bt.svg" ></div>
 </header>
 
 <!-- HEADER RIGHT -->
 <nav class="site-nav">
-	<div class="close-menu-bt"><i class="fa fa-times close-bt"></i></div>
+	<div class="close-menu-bt"><img src="<?php echo get_template_directory_uri(); ?>/img/close-bt.svg" ></div>
 	<div class="menu-label">Explore</div>
 	<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
 	<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>

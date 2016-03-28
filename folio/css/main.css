@@ -33,7 +33,7 @@ Version: 1.0
   background: #e74c3c;
 }
 body {
-  background: #f9f9f9;
+  background: #ffffff;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,15 +45,7 @@ body {
   background-attachment: fixed;
 }*/
 #page {
-  z-index: 4;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height:100%;
-  transition:all ease-in 0.5s;
-  -webkit-transition:all ease-in 0.5s;
-  -moz-transition:all ease-in 0.5s;
-  -o-transition:all ease-in 0.5s;
+
 }
 
 /* -------------------------------------------------------------- 
@@ -74,11 +66,16 @@ figure {
   width: 860px;
   margin: 0 auto;
 }
+.thin-wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
 .box {
   padding: 30px 0;
 }
-.content-404 .box {
-  padding: 60px 0;
+.content-404  {
+  padding: 220px 0 200px 0;
+  text-align: center;
 }
 .content-page {
   padding: 220px 0 100px 0; 
@@ -173,17 +170,17 @@ ul li {
 }
 /* TOP LEFT SITE INFOS */
 .site-infos {
-  height: 40px;
+  height: 30px;
   float: left;
   position: relative;
   cursor: pointer;
 }
 .site-infos:hover .logo {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .site-infos .logo {
   width: auto;
-  height: 40px;
+  height: 30px;
   position: relative;
   margin: 0;
   transition:all ease 0.3s;
@@ -264,23 +261,33 @@ ul li {
 .menu-bt {
   cursor: pointer;
   float: right;
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  width: 30px;
   margin: 0;
-  font-size: 21px;
-  width: 18px;
-  color: #666666;
+  opacity: 0.3;
+  transition:all ease 0.3s;
+}
+.menu-bt img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 .close-menu-bt {
   position: absolute;
   z-index: 4;
-  top: 60px;
-  font-size: 18px;
-  right: 60px;
-  width: 18px;
-  height: 18px;
+  right: 50px;
+  top: 50px;
+  width: 30px;
+  height: 30px;
   color: #999999;
   cursor: pointer;
+  opacity: 0.3;
+  transition:all ease 0.3s;
+}
+.close-menu-bt img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 .menu-bt:hover,
 .close-menu-bt:hover {
@@ -396,6 +403,12 @@ h2.job-title {
   width: 33.33%;
   float: left;
 }
+.entry-content h2 {
+  font-size: 2.2em;
+  font-family: "Lora",sans-serif;
+  color: #333333;
+  font-weight: normal;
+}
 
 /* -------------------------------------------------------------- 
 /* =JOURNAL
@@ -412,8 +425,8 @@ h2.job-title {
   content: "";
   display: block;
 }
-.one-article__title h4 {
-  font-size: 1.8em;
+.one-article__title h3 {
+  font-size: 2em;
   margin: 0;
 }
 .one-article__title p {
@@ -573,16 +586,28 @@ h2.job-title {
 }
 .one-work {
   margin: 0;
-  margin: 10px 0;
-  padding: 10px 0;
+  float: left;
+  width: 48%;
+  margin: 0 0 40px 0;
+  border: 10px solid #f0f0f0;
+  padding: 40px;
   cursor: pointer;
   position: relative;
   color: #666666;
+  transition: all ease 0.3s;
+}
+.one-work:hover {
+  border: 10px solid #e74c3c;
+}
+.one-work:nth-child(2n) {
+  width: 48%;
+  margin: 0 0 40px 4%;
 }
 .one-work .number {
   width: 50px;
   font-size: 1.2em;
   text-align: left;
+  display: block;
   color: #666666;
   display: inline-block;
   position: relative;
@@ -602,22 +627,20 @@ h2.job-title {
   width: 80%;
 }
 .one-work h4 {
-  margin: 0;
+  margin: 40px 0 10px 0;
   font-size:1.6em;
   text-transform: none;
   letter-spacing: normal;
   color: #333333;
-  display: inline-block;
+  display: block;
   transition:all ease 0.3s;
 }
 .one-work:hover h4 {
   color: #e74c3c;
 }
 .one-work .work-desc {
-  margin: 0 0 0 10px;
-  font-size:1.2em;
+  display: block;
   color: #666666;
-  display: inline-block;
   font-family: 'Lora', sans-serif;
 }
 
@@ -645,7 +668,6 @@ footer .copy {
   margin: 0 10px;
   color: #999999;
   font-size: 24px;
-  opacity: 0.5;
 }
 .footer-links a:hover {
   color: #666666;
@@ -660,9 +682,13 @@ footer .copy {
 /* =RESPONSIVE / SCREEN UNDER 700PX
 -------------------------------------------------------------- */
 @media screen and (max-width: 700px) {
-.wrapper {
+.wrapper,
+.thin-wrapper {
   width: 86%;
   margin: 0 7%;
+}
+.one-article__title h3 {
+  font-size: 1.4em;
 }
 .about {
   padding: 120px 0 40px 0;
@@ -687,12 +713,24 @@ p {
 .works {
   padding: 0 0 40px 0;
 }
+.one-work,
+.one-work:nth-child(2n) {
+  width: 100%;
+  margin: 0 0 40px 0;
+  border: 0;
+  padding: 0;
+}
+.one-work:hover {
+  border: 0;
+}
+.one-work h4 {
+  margin: 10px 0;
+}
 .one-work .number {
   display: block;
 }
 .one-work .work-desc {
   margin: 7px 0 0 0;
-  font-size: 13px;
   display: block;
 }
 .half-width {
@@ -725,8 +763,8 @@ h3 {
 	width: 320px;
 }
 .close-menu-bt {
-  top: 50px;
-  right: 50px;
+  top: 42px;
+  right: 42px;
 }
 .site-nav.opened {
 	-webkit-transform: translateX(-320px);
