@@ -12,17 +12,14 @@ get_header(); ?>
 <!-- CONTENT -->
 <section class="content-page">
 	<div class="thin-wrapper">
-		<div class="box">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-			<h4>You're about to read.</h4>
-			<p class="article-name"><?php the_title(); ?></p>
-			<div class="entry-content"><?php the_content(); ?></div>
+		<h4>You're about to read.</h4>
+		<p class="article-name"><?php the_title(); ?></p>
+		<div class="entry-content"><?php the_content(); ?></div>
 
-			<?php endwhile; ?>
-
-		</div>
+		<?php endwhile; ?>
 
 		<div class="user-section">
 			<div class="user-face">

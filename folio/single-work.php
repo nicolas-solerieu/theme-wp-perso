@@ -16,7 +16,6 @@ get_header(); ?>
 <!-- CONTENT -->
 <section class="content-page">
 	<div class="wrapper">
-		<div class="box">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -24,7 +23,6 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
-		</div>
 	</div>
 </section>
 
