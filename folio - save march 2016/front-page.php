@@ -14,7 +14,6 @@ get_header(); ?>
 	<div class="wrapper">	
 		<h1 class="site-name"><?php $myname = get_option( 'personal_name', false ); echo $myname;  ?></h1>
 		<h2 class="job-title"><?php $myjob = get_option( 'job_label', false ); echo $myjob;  ?></h2>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/design-illustration.png" class="design-illustration">
 		<p class="headline"><?php $headline_full = get_option( 'headline_full', false ); echo $headline_full;  ?></p>
 		<p class="intro-text"><?php $intro_text = get_option( 'intro_text', false ); echo $intro_text;  ?></p>
 		<div class="clear"></div>
@@ -43,7 +42,7 @@ get_header(); ?>
 			<div class="one-work" onclick="document.location.href='<?php echo get_permalink(get_the_ID()); ?>'">
 				<span class="number" >0<?php echo $counter; ?>.</span>
 				<h4><?php echo get_the_title(); ?></h4>
-				<p class="work-desc" ><?php echo get_the_excerpt(); ?></p>
+				<div class="work-desc" ><?php echo get_the_excerpt(); ?></div>
 			</div>
 
 			<?php endwhile; ?>

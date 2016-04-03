@@ -13,16 +13,16 @@
 <!-- FOOTER -->
 <footer>
 	<div class="wrapper">
-		<div class="footer-links">
-			<a href="https://dribbble.com/SLRNCL" target="_blank">Dribbble</a>
-			<a href="https://www.behance.net/SLRNCL" target="_blank">Behance</a>
-			<a href="https://github.com/nicolas-solerieu" target="_blank">Github</a>
-			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank">Linkedin</a>
-		</div>
 		<p class="copy">
 		&copy; <?php echo date("Y"); ?> Nicolas Solerieu.
 			<a href="<?php echo get_permalink(76); ?>" >Informations</a>
 		</p>
+		<div class="footer-links">
+			<a href="https://dribbble.com/SLRNCL" target="_blank"><i class="fa fa-dribbble"></i></a>
+			<a href="https://www.behance.net/SLRNCL" target="_blank"><i class="fa fa-behance"></i></a>
+			<a href="https://github.com/nicolas-solerieu" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</div>
 	</div>
 </footer>
 

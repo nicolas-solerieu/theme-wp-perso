@@ -31,7 +31,7 @@ get_header(); ?>
 	<div class="wrapper">
 
 	<?php
-	$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 999); 
+	$args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 9); 
 	$loop = new WP_Query( $args );
 	?>
 

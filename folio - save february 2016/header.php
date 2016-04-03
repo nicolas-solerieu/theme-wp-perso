@@ -26,8 +26,8 @@
 
     <!-- User agent / Viewport / compression -->
     <meta http-equiv="content-encoding" content="gzip, deflate">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -52,7 +52,8 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- CSS Zone -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" >
@@ -89,26 +90,24 @@
 
 <!-- HEADER -->
 <header class="site-header">
+
 	<div class="site-infos" onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo">
 	</div>
 
-	<div class="menu-bt"><img src="<?php echo get_template_directory_uri(); ?>/img/menu-bt.svg" ></div>
+	<div class="menu-bt"><i class="fa fa-bars burger-bt"></i></div>
+
 </header>
 
 <!-- HEADER RIGHT -->
 <nav class="site-nav">
-
-	<div class="close-menu-bt"><img src="<?php echo get_template_directory_uri(); ?>/img/close-bt.svg" ></div>
+	<div class="close-menu-bt"><i class="fa fa-times close-bt"></i></div>
 	<div class="menu-label">Explore</div>
-
-	<div class="nav-links">
-		<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
-		<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
-		<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
-		<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
-		<a class="site-nav-link <?php if ( is_page( 239 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(239); ?>" >Contact</a>
-	</div>
+	<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
+	<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
+	<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
+	<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
+	<a class="site-nav-link <?php if ( is_page( 239 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(239); ?>" >Contact</a>
 </nav>
 
 <div class="overlay-black"></div>

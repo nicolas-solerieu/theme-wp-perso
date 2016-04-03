@@ -13,6 +13,7 @@
 <!-- FOOTER -->
 <footer>
 	<div class="wrapper">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/footer-illustration.png" class="footer-illustration">
 		<div class="footer-links">
 			<a href="https://dribbble.com/SLRNCL" target="_blank">Dribbble</a>
 			<a href="https://www.behance.net/SLRNCL" target="_blank">Behance</a>

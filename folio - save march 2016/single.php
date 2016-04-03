@@ -11,7 +11,7 @@ get_header(); ?>
 
 <!-- CONTENT -->
 <section class="content-page">
-	<div class="wrapper">
+	<div class="thin-wrapper">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
