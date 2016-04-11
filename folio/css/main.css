@@ -29,13 +29,8 @@ Version: 1.0
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 ::selection {
-<<<<<<< HEAD
   color: #333333;
   background: #fff4cc;
-=======
-  color: #fff;
-  background: #e74c3c;
->>>>>>> origin/master
 }
 body {
   background: #ffffff;
@@ -43,10 +38,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 1em;
-<<<<<<< HEAD
   line-height: 1;
-=======
->>>>>>> origin/master
 }
 
 /* -------------------------------------------------------------- 
@@ -82,7 +74,6 @@ p {
   color: #666666;
   margin: 10px 0 30px 0;
   font-size: 1em;
-<<<<<<< HEAD
   line-height: 1.7;
 }
 a {
@@ -96,34 +87,6 @@ a:hover {
   background: #fff4cc;
   color: #333333;
   border-bottom: 1px solid transparent;
-=======
-  font-weight: 300;
-  line-height: 1.7;
-}
-a {
-  outline: none;
-  color: #e74c3c;
-  text-decoration: none;
-  position: relative;
-}
-p a {
-  font-weight: 400;
-}
-p a::before {
-  content: '';
-  border-bottom: 2px solid #e74c3c;
-  width: 0;
-  position: absolute;
-  left: 0;
-  top: 55%;
-  transition:all ease 0.3s;
-  -webkit-transition:all ease 0.3s;
-  -moz-transition:all ease 0.3s;
-  -o-transition:all ease 0.3s;
-}
-p a:hover::before {
-    width: 100%;
->>>>>>> origin/master
 }
 h3 {
   margin: 0;
@@ -172,14 +135,6 @@ pre {
   position: fixed;
   z-index: 9;
   opacity: 0;
-<<<<<<< HEAD
-=======
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
->>>>>>> origin/master
   -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
   -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
   -o-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -254,23 +209,16 @@ pre {
 }
 .site-nav-link {
   display: inline-block;
-<<<<<<< HEAD
   border: 0;
   margin: 0;
   width: 100%;
   font-weight: 400;
-=======
-  margin: 0;
-  width: 100%;
-  font-weight: 300;
->>>>>>> origin/master
   font-size: 18px;
   padding: 15px 0;
   color: #999999;
   transition: color ease 0.3s;
 }
 .site-nav-link.active {
-<<<<<<< HEAD
   color: #333333;
 }
 .site-nav-link:hover {
@@ -278,13 +226,6 @@ pre {
   border: 0;
   background-color: transparent;
 }
-=======
-  color: #e74c3c;
-}
-.site-nav-link:hover {
-  color: #e74c3c;
-}
->>>>>>> origin/master
 .menu-label {
 	font-size: 11px;
   letter-spacing: 2px;
@@ -299,10 +240,6 @@ pre {
   height: 30px;
   width: 30px;
   margin: 0;
-<<<<<<< HEAD
-=======
-  opacity: 0.3;
->>>>>>> origin/master
   transition:all ease 0.3s;
 }
 .menu-bt img {
@@ -337,7 +274,6 @@ pre {
 /* =INTRO - ABOUT
 -------------------------------------------------------------- */
 .about {
-<<<<<<< HEAD
   padding: 105px 0 70px 0;
   text-align: center;
   background: url('../img/dot-pattern.svg');
@@ -345,32 +281,16 @@ pre {
 h1.site-name {
   font-size: 20px;
   margin: 20px 0 5px 0;
-=======
-  padding: 200px 0 70px 0;
-  text-align: center;
-}
-h1.site-name {
-  font-size: 16px;
-  margin: 0;
->>>>>>> origin/master
   font-weight: 400;
   color: #333333;
   position: relative;
 }
 h2.job-title {
-<<<<<<< HEAD
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 40px 0;
-=======
-  font-size: 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
->>>>>>> origin/master
   color: #999999;
 }
 .design-illustration {
@@ -380,11 +300,6 @@ h2.job-title {
 }
 .headline {
   font-size: 32px;
-<<<<<<< HEAD
-=======
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
->>>>>>> origin/master
   color: #333333;
   margin: 0 0 40px 0;
 }
@@ -422,11 +337,7 @@ h2.job-title {
   right: 100%;
   width: 100%;
   height: 4px;
-<<<<<<< HEAD
   background: #333333;
-=======
-  background: #e74c3c;;
->>>>>>> origin/master
   pointer-events: none;
 }
 
@@ -451,11 +362,7 @@ h2.job-title {
   font-size: 14px;
 }
 .big-text {
-<<<<<<< HEAD
   font-size: 24px;
-=======
-  font-size: 28px;
->>>>>>> origin/master
   margin: 0 0 20px 0;
   line-height: 170%;
   color: #333333;
@@ -481,11 +388,7 @@ h2.job-title {
   padding: 0 0 40px 0;
 }
 .one-article {
-<<<<<<< HEAD
   padding: 40px 0;
-=======
-  padding: 30px 0;
->>>>>>> origin/master
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 .one-article__title {
@@ -498,39 +401,16 @@ h2.job-title {
 }
 .one-article__title h3 {
   font-size: 1.5em;
-<<<<<<< HEAD
   font-weight: 400;
-=======
-  font-weight: 300;
->>>>>>> origin/master
   margin: 0;
 }
 .one-article__title p {
   margin: 0;
   color: #999999;
   font-size: 12px;
-<<<<<<< HEAD
 }
 .one-article__content {
   padding: 20px 0 0 0;
-=======
-}
-.one-article__content {
-  padding: 20px 0 0 0;
-}
-.one-article__content a {
-  display: inline-block;
-  margin: 0 0 20px 0;
-  font-size: 14px;
-  font-weight: bold;
-}
-.one-article__content a:hover {
-	opacity: 0.5;
-}
-.article-name {
-  color: #333333;
-  font-size: 2.4em;
->>>>>>> origin/master
 }
 .one-article__content a {
   display: inline-block;
@@ -607,11 +487,7 @@ h2.job-title {
   z-index: 3;
   top: 0;
   left: 0;
-<<<<<<< HEAD
   background: #fff4cc;
-=======
-  background: #e74c3c;
->>>>>>> origin/master
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -630,11 +506,7 @@ h2.job-title {
   line-height: 30px;
   text-align: center;
   margin: -15px 0 0 -15px;
-<<<<<<< HEAD
   color: #333333;
-=======
-  color: #ffffff;
->>>>>>> origin/master
   opacity: 0;
   transition:all 0.3s ease 0.3s;
   -webkit-transition:all 0.3s ease 0.3s;
@@ -673,11 +545,7 @@ h2.job-title {
 /* =WORKS
 -------------------------------------------------------------- */
 .works {
-<<<<<<< HEAD
   padding: 60px 0;
-=======
-  padding: 0 0 40px 0;
->>>>>>> origin/master
 }
 .label-works {
   font-size: 10px;
@@ -713,11 +581,7 @@ h2.job-title {
   width: 0;
   left: 0;
   top: 50%;
-<<<<<<< HEAD
   background: #d2d2d2;
-=======
-  background: #e74c3c;
->>>>>>> origin/master
   position: absolute;
   transition:all ease 0.3s;
   content: '';
@@ -728,11 +592,7 @@ h2.job-title {
 .one-work h4 {
   margin: 0 10px;
   font-size:1.6em;
-<<<<<<< HEAD
   font-weight: 400;
-=======
-  font-weight: 300;
->>>>>>> origin/master
   text-transform: none;
   letter-spacing: normal;
   color: #333333;
@@ -740,11 +600,7 @@ h2.job-title {
   transition:all ease 0.3s;
 }
 .one-work:hover h4 {
-<<<<<<< HEAD
   background: #fff4cc;
-=======
-  color: #e74c3c;
->>>>>>> origin/master
 }
 .one-work .work-desc {
   display: inline-block;
@@ -757,11 +613,7 @@ h2.job-title {
 /* =FOOTER
 -------------------------------------------------------------- */
 footer  {
-<<<<<<< HEAD
   padding: 60px 0;
-=======
-  padding: 40px 0;
->>>>>>> origin/master
   margin: 0;
 }
 .footer-links {
@@ -771,7 +623,6 @@ footer  {
 .footer-links a {
   display: inline-block;
   margin: 0 15px;
-<<<<<<< HEAD
   color: #333333;
   font-size: 15px;
   transition:color ease 0.3s;
@@ -780,24 +631,12 @@ footer .copy {
   text-align: center;
   display: block;
   font-size: 12px;
-=======
-  color: #666666;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition:color ease 0.3s;
-}
-.footer-links a:hover {
-  color: #e74c3c;
-}
-footer .copy {
-  text-align: center;
-  display: block;
-  font-size: 14px;
->>>>>>> origin/master
   color: #888888;
   margin: 20px 0 0 0;
 }
+
+
+
 
 /* -------------------------------------------------------------- 
 /* =RESPONSIVE / SCREEN UNDER 700PX
@@ -812,11 +651,7 @@ footer .copy {
   font-size: 1.4em;
 }
 .about {
-<<<<<<< HEAD
   padding: 80px 0 40px 0;
-=======
-  padding: 120px 0 40px 0;
->>>>>>> origin/master
 }
 p {
   font-size: 14px;
@@ -826,11 +661,7 @@ p {
   margin: 30px 0;
 }
 .intro-text {
-<<<<<<< HEAD
   margin: 0 40px 30px 40px;
-=======
-  margin: 0 0 30px 0;
->>>>>>> origin/master
 }
 .big-text {
   font-size: 1em;
@@ -840,11 +671,7 @@ p {
   width: 100%;
 }
 .works {
-<<<<<<< HEAD
   padding: 30px 0 0 0;
-=======
-  padding: 0;
->>>>>>> origin/master
 }
 .one-work,
 .one-work:nth-child(2n) {
@@ -857,19 +684,12 @@ p {
   border: 0;
 }
 .one-work h4 {
-<<<<<<< HEAD
   margin: 10px 0 0 0;
-=======
-  margin: 0;
->>>>>>> origin/master
   font-size: 1.4em;
 }
 .one-work .number {
   display: block;
-<<<<<<< HEAD
   font-size: 10px;
-=======
->>>>>>> origin/master
   text-align: center;
 }
 .one-work .work-desc {
@@ -912,30 +732,17 @@ h3 {
 .site-nav.opened {
 	-webkit-transform: translateX(-320px);
 	transform: translateX(-320px);
-<<<<<<< HEAD
 }
 .content-page {
   padding: 100px 0 50px 0;
 }
-=======
-}
-.content-page {
-  padding: 100px 0 50px 0;
-}
->>>>>>> origin/master
 footer {
   text-align: left;
 }
 .footer-links a {
   display: inline-block;
-<<<<<<< HEAD
   font-size: 15px;
   margin: 5px;
-=======
-  width: 100%;
-  font-size: 15px;
-  margin: 10px 0 0 0;
->>>>>>> origin/master
 }
 
 

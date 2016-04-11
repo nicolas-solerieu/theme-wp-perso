@@ -12,17 +12,11 @@ get_header(); ?>
 <!-- INTRO -->
 <section class="about">
 	<div class="wrapper">	
-<<<<<<< HEAD
 		<img src="<?php echo get_template_directory_uri(); ?>/img/design-illustration.png" class="design-illustration">
 
 		<h1 class="site-name"><?php $myname = get_option( 'personal_name', false ); echo $myname;  ?></h1>
 		<h2 class="job-title"><?php $myjob = get_option( 'job_label', false ); echo $myjob;  ?></h2>
 		
-=======
-		<h1 class="site-name"><?php $myname = get_option( 'personal_name', false ); echo $myname;  ?></h1>
-		<h2 class="job-title"><?php $myjob = get_option( 'job_label', false ); echo $myjob;  ?></h2>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/design-illustration.png" class="design-illustration">
->>>>>>> origin/master
 		<p class="headline"><?php $headline_full = get_option( 'headline_full', false ); echo $headline_full;  ?></p>
 		<p class="intro-text"><?php $intro_text = get_option( 'intro_text', false ); echo $intro_text;  ?></p>
 		<div class="clear"></div>

@@ -20,11 +20,7 @@
 			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank">Linkedin</a>
 		</div>
 		<p class="copy">
-<<<<<<< HEAD
 			&copy; 2012-<?php echo date("Y"); ?>. All trademarks belong to their respective owners. All rights reserved.
-=======
-		&copy; <?php echo date("Y"); ?> Nicolas Solerieu.
->>>>>>> origin/master
 			<a href="<?php echo get_permalink(76); ?>" >Informations</a>
 		</p>
 	</div>
