@@ -29,13 +29,8 @@ Version: 1.0
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 ::selection {
-<<<<<<< HEAD
-  color: #333333;
-  background: #fff4cc;
-=======
   color: #fff;
   background: #e74c3c;
->>>>>>> origin/master
 }
 body {
   background: #ffffff;
@@ -43,10 +38,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 1em;
-<<<<<<< HEAD
-  line-height: 1;
-=======
->>>>>>> origin/master
+}
+body.home {
+  background: #ffffff url('../img/bg-home.jpg') top center no-repeat;
+  background-size: 100% auto;
 }
 
 /* -------------------------------------------------------------- 
@@ -64,15 +59,22 @@ figure {
   display: none;
 }
 .wrapper {
-  width: 560px;
+  width: 860px;
   margin: 0 auto;
+}
+.thin-wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+.box {
+  padding: 30px 0;
 }
 .content-404  {
   padding: 220px 0 200px 0;
   text-align: center;
 }
 .content-page {
-  padding: 200px 0 80px 0; 
+  padding: 220px 0 100px 0; 
 }
 
 /* -------------------------------------------------------------- 
@@ -80,25 +82,11 @@ figure {
 -------------------------------------------------------------- */
 p {
   color: #666666;
+  font-family: 'Lora', sans-serif;
   margin: 10px 0 30px 0;
-  font-size: 1em;
-<<<<<<< HEAD
-  line-height: 1.7;
-}
-a {
-  text-decoration: none;
-  color: #999999;
-  border-bottom: 1px solid #e8e8e8;
-  outline: none;
-  transition:all ease 0.3s;
-}
-a:hover {
-  background: #fff4cc;
-  color: #333333;
-  border-bottom: 1px solid transparent;
-=======
-  font-weight: 300;
-  line-height: 1.7;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.8;
 }
 a {
   outline: none;
@@ -107,15 +95,15 @@ a {
   position: relative;
 }
 p a {
-  font-weight: 400;
+  font-weight: bold;
 }
 p a::before {
   content: '';
-  border-bottom: 2px solid #e74c3c;
+  border-bottom: 4px solid #e74c3c;
   width: 0;
   position: absolute;
   left: 0;
-  top: 55%;
+  top: 45%;
   transition:all ease 0.3s;
   -webkit-transition:all ease 0.3s;
   -moz-transition:all ease 0.3s;
@@ -123,7 +111,6 @@ p a::before {
 }
 p a:hover::before {
     width: 100%;
->>>>>>> origin/master
 }
 h3 {
   margin: 0;
@@ -131,7 +118,7 @@ h3 {
   font-size: 1.8em;
 }
 h4 {
-  color: #666666;
+  color: #333333;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
@@ -145,6 +132,7 @@ h5 {
 ul li {
   color: #666666;
   font-size: 1.2em;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   display: inline-block;
   margin: 10px 0;
@@ -153,6 +141,7 @@ pre {
 	background: #f0f0f0;
 	color: #333333;
 	font-size: 1em;
+	font-family: "Roboto",sans-serif;
 	line-height: 150%;
 	border-radius: 4px;
 	margin: 10px 0;
@@ -172,14 +161,11 @@ pre {
   position: fixed;
   z-index: 9;
   opacity: 0;
-<<<<<<< HEAD
-=======
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
->>>>>>> origin/master
   -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
   -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
   -o-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -237,7 +223,7 @@ pre {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #999999;
+  background-color: #121212;
   opacity: 0;
   z-index: 150;
   visibility: hidden;
@@ -249,45 +235,47 @@ pre {
   -webkit-perspective: 1000;
 }
 .overlay-black.displayed {
-	opacity: 0.8;
+	opacity: 0.9;
 	visibility: visible;
 }
 .site-nav-link {
   display: inline-block;
-<<<<<<< HEAD
-  border: 0;
   margin: 0;
   width: 100%;
-  font-weight: 400;
-=======
-  margin: 0;
-  width: 100%;
-  font-weight: 300;
->>>>>>> origin/master
-  font-size: 18px;
-  padding: 15px 0;
+  font-size: 22px;
+  font-family: "Lora",sans-serif;
+  padding: 15px;
   color: #999999;
-  transition: color ease 0.3s;
+  opacity: 0;
+}
+.site-nav.opened .site-nav-link{
+  opacity: 1;
+  padding: 15px 0;
+}
+.site-nav-link:nth-child(1) {
+  transition:all 0.2s ease-in 0.3s;
+}
+.site-nav-link:nth-child(2) {
+  transition:all 0.2s ease-in 0.6s;
+}
+.site-nav-link:nth-child(3) {
+  transition:all 0.2s ease-in 0.9s;
+}
+.site-nav-link:nth-child(4) {
+  transition:all 0.2s ease-in 1.2s;
+}
+.site-nav-link:nth-child(5) {
+  transition:all 0.2s ease-in 1.5s;
 }
 .site-nav-link.active {
-<<<<<<< HEAD
-  color: #333333;
-}
-.site-nav-link:hover {
-  color: #333333;
-  border: 0;
-  background-color: transparent;
-}
-=======
   color: #e74c3c;
 }
 .site-nav-link:hover {
   color: #e74c3c;
 }
->>>>>>> origin/master
 .menu-label {
-	font-size: 11px;
-  letter-spacing: 2px;
+	font-size: 12px;
+  letter-spacing: 3px;
 	font-weight: bold;
   text-transform: uppercase;
 	color: #333333;
@@ -299,10 +287,7 @@ pre {
   height: 30px;
   width: 30px;
   margin: 0;
-<<<<<<< HEAD
-=======
   opacity: 0.3;
->>>>>>> origin/master
   transition:all ease 0.3s;
 }
 .menu-bt img {
@@ -337,57 +322,38 @@ pre {
 /* =INTRO - ABOUT
 -------------------------------------------------------------- */
 .about {
-<<<<<<< HEAD
-  padding: 105px 0 70px 0;
-  text-align: center;
-  background: url('../img/dot-pattern.svg');
+  padding: 260px 0 70px 0;
 }
 h1.site-name {
-  font-size: 20px;
-  margin: 20px 0 5px 0;
-=======
-  padding: 200px 0 70px 0;
-  text-align: center;
-}
-h1.site-name {
-  font-size: 16px;
+  font-size: 19px;
+  line-height: normal;
+  font-family: 'Lora', sans-serif;
+  display: inline-block;
   margin: 0;
->>>>>>> origin/master
-  font-weight: 400;
   color: #333333;
   position: relative;
 }
 h2.job-title {
-<<<<<<< HEAD
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 2px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 0 40px 0;
-=======
-  font-size: 10px;
-  letter-spacing: 2px;
+  line-height: normal;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
->>>>>>> origin/master
   color: #999999;
 }
-.design-illustration {
-  width: 150px;
-  display: block;
-  margin: 30px auto;
-}
 .headline {
-  font-size: 32px;
-<<<<<<< HEAD
-=======
+  font-size: 62px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
->>>>>>> origin/master
+  line-height: 1.3;
+  font-weight: 700;
   color: #333333;
-  margin: 0 0 40px 0;
+  margin: 40px 0;
 }
+.intro-text {
+  font-size: 18px;
+}
+
 
 /* -------------------------------------------------------------- 
 /* =PACE
@@ -422,11 +388,7 @@ h2.job-title {
   right: 100%;
   width: 100%;
   height: 4px;
-<<<<<<< HEAD
-  background: #333333;
-=======
   background: #e74c3c;;
->>>>>>> origin/master
   pointer-events: none;
 }
 
@@ -451,14 +413,10 @@ h2.job-title {
   font-size: 14px;
 }
 .big-text {
-<<<<<<< HEAD
-  font-size: 24px;
-=======
-  font-size: 28px;
->>>>>>> origin/master
+  font-size: 2.2em;
   margin: 0 0 20px 0;
   line-height: 170%;
-  color: #333333;
+  color: #666666;
 }
 .right-col {
   width: 66.66%;
@@ -470,22 +428,16 @@ h2.job-title {
 }
 .entry-content h2 {
   font-size: 2.2em;
+  font-family: "Lora",sans-serif;
   color: #333333;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 /* -------------------------------------------------------------- 
 /* =JOURNAL
 -------------------------------------------------------------- */
-.journal-feed {
-  padding: 0 0 40px 0;
-}
 .one-article {
-<<<<<<< HEAD
-  padding: 40px 0;
-=======
   padding: 30px 0;
->>>>>>> origin/master
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 .one-article__title {
@@ -497,23 +449,13 @@ h2.job-title {
   display: block;
 }
 .one-article__title h3 {
-  font-size: 1.5em;
-<<<<<<< HEAD
-  font-weight: 400;
-=======
-  font-weight: 300;
->>>>>>> origin/master
+  font-size: 2em;
   margin: 0;
 }
 .one-article__title p {
   margin: 0;
   color: #999999;
   font-size: 12px;
-<<<<<<< HEAD
-}
-.one-article__content {
-  padding: 20px 0 0 0;
-=======
 }
 .one-article__content {
   padding: 20px 0 0 0;
@@ -526,15 +468,6 @@ h2.job-title {
 }
 .one-article__content a:hover {
 	opacity: 0.5;
-}
-.article-name {
-  color: #333333;
-  font-size: 2.4em;
->>>>>>> origin/master
-}
-.one-article__content a {
-  display: inline-block;
-  font-size: 14px;
 }
 .article-name {
   color: #333333;
@@ -607,11 +540,7 @@ h2.job-title {
   z-index: 3;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-  background: #fff4cc;
-=======
   background: #e74c3c;
->>>>>>> origin/master
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -630,11 +559,7 @@ h2.job-title {
   line-height: 30px;
   text-align: center;
   margin: -15px 0 0 -15px;
-<<<<<<< HEAD
-  color: #333333;
-=======
   color: #ffffff;
->>>>>>> origin/master
   opacity: 0;
   transition:all 0.3s ease 0.3s;
   -webkit-transition:all 0.3s ease 0.3s;
@@ -659,8 +584,7 @@ h2.job-title {
 }
 .one-shot figure figcaption h3 {
   color: #333333;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
   margin: 0;
 }
 .mfp-image-holder .mfp-content {
@@ -673,83 +597,74 @@ h2.job-title {
 /* =WORKS
 -------------------------------------------------------------- */
 .works {
-<<<<<<< HEAD
-  padding: 60px 0;
-=======
   padding: 0 0 40px 0;
->>>>>>> origin/master
 }
 .label-works {
-  font-size: 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto",sans-serif;
   margin: 0 0 30px 0;
-  color: #999999;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 .one-work {
   margin: 0;
   float: left;
-  text-align: center;
-  width: 100%;
+  width: 47%;
   margin: 0;
-  padding: 10px 0;
+  border-top: 10px solid #f0f0f0;
+  padding: 30px 0 60px 0;
   cursor: pointer;
   position: relative;
   color: #666666;
   transition: all ease 0.3s;
 }
+.one-work:hover {
+  border-top: 10px solid #e74c3c;
+}
+.one-work:nth-child(2n) {
+  width: 47%;
+  margin: 0 0 0 6%;
+}
 .one-work .number {
-  font-size: 1em;
+  width: 50px;
+  font-size: 1.2em;
   text-align: left;
-  display: inline-block;
+  display: block;
   color: #666666;
   display: inline-block;
   position: relative;
+  font-family: 'Lora', sans-serif;
 }
 .one-work .number::before {
-  height: 2px;
+  height: 4px;
   width: 0;
   left: 0;
-  top: 50%;
-<<<<<<< HEAD
-  background: #d2d2d2;
-=======
+  top: 40%;
   background: #e74c3c;
->>>>>>> origin/master
   position: absolute;
   transition:all ease 0.3s;
   content: '';
 }
 .one-work:hover .number::before {
-  width: 100%;
+  width: 80%;
 }
 .one-work h4 {
-  margin: 0 10px;
-  font-size:1.6em;
-<<<<<<< HEAD
-  font-weight: 400;
-=======
-  font-weight: 300;
->>>>>>> origin/master
+  margin: 20px 0 10px 0;
+  font-size:2em;
   text-transform: none;
   letter-spacing: normal;
   color: #333333;
-  display: inline-block;
+  display: block;
   transition:all ease 0.3s;
 }
 .one-work:hover h4 {
-<<<<<<< HEAD
-  background: #fff4cc;
-=======
   color: #e74c3c;
->>>>>>> origin/master
 }
 .one-work .work-desc {
-  display: inline-block;
+  display: block;
   color: #666666;
-  margin: 0;
+  font-family: 'Lora', sans-serif;
 }
 
 
@@ -757,12 +672,13 @@ h2.job-title {
 /* =FOOTER
 -------------------------------------------------------------- */
 footer  {
-<<<<<<< HEAD
-  padding: 60px 0;
-=======
   padding: 40px 0;
->>>>>>> origin/master
   margin: 0;
+}
+.footer-illustration {
+	width: 175px;
+	margin: 0 auto 20px auto;
+	display: block;
 }
 .footer-links {
   margin: 0;
@@ -771,33 +687,24 @@ footer  {
 .footer-links a {
   display: inline-block;
   margin: 0 15px;
-<<<<<<< HEAD
-  color: #333333;
-  font-size: 15px;
-  transition:color ease 0.3s;
-}
-footer .copy {
-  text-align: center;
-  display: block;
-  font-size: 12px;
-=======
   color: #666666;
+  opacity: 0.5;
   font-size: 13px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  transition:color ease 0.3s;
+  transition:all ease 0.3s;
 }
 .footer-links a:hover {
-  color: #e74c3c;
+  opacity: 1;
 }
 footer .copy {
   text-align: center;
   display: block;
   font-size: 14px;
->>>>>>> origin/master
   color: #888888;
   margin: 20px 0 0 0;
 }
+
 
 /* -------------------------------------------------------------- 
 /* =RESPONSIVE / SCREEN UNDER 700PX
@@ -812,25 +719,17 @@ footer .copy {
   font-size: 1.4em;
 }
 .about {
-<<<<<<< HEAD
-  padding: 80px 0 40px 0;
-=======
   padding: 120px 0 40px 0;
->>>>>>> origin/master
 }
 p {
   font-size: 14px;
 }
 .headline {
-  font-size:20px;
-  margin: 30px 0;
+  font-size:26px;
+  margin: 40px 0;
 }
 .intro-text {
-<<<<<<< HEAD
-  margin: 0 40px 30px 40px;
-=======
   margin: 0 0 30px 0;
->>>>>>> origin/master
 }
 .big-text {
   font-size: 1em;
@@ -840,11 +739,7 @@ p {
   width: 100%;
 }
 .works {
-<<<<<<< HEAD
-  padding: 30px 0 0 0;
-=======
   padding: 0;
->>>>>>> origin/master
 }
 .one-work,
 .one-work:nth-child(2n) {
@@ -857,23 +752,14 @@ p {
   border: 0;
 }
 .one-work h4 {
-<<<<<<< HEAD
-  margin: 10px 0 0 0;
-=======
-  margin: 0;
->>>>>>> origin/master
-  font-size: 1.4em;
+  margin: 10px 0;
+  font-size: 1.7em;
 }
 .one-work .number {
   display: block;
-<<<<<<< HEAD
-  font-size: 10px;
-=======
->>>>>>> origin/master
-  text-align: center;
 }
 .one-work .work-desc {
-  margin: 0;
+  margin: 7px 0 0 0;
   display: block;
 }
 .half-width {
@@ -912,30 +798,19 @@ h3 {
 .site-nav.opened {
 	-webkit-transform: translateX(-320px);
 	transform: translateX(-320px);
-<<<<<<< HEAD
 }
 .content-page {
   padding: 100px 0 50px 0;
-}
-=======
-}
-.content-page {
-  padding: 100px 0 50px 0;
-}
->>>>>>> origin/master
-footer {
-  text-align: left;
 }
 .footer-links a {
   display: inline-block;
-<<<<<<< HEAD
-  font-size: 15px;
-  margin: 5px;
-=======
   width: 100%;
   font-size: 15px;
   margin: 10px 0 0 0;
->>>>>>> origin/master
+}
+.footer-illustration {
+	width: 120px;
+	margin: 0 auto 10px auto;
 }
 
 

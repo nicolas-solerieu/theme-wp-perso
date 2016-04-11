@@ -13,6 +13,7 @@
 <!-- FOOTER -->
 <footer>
 	<div class="wrapper">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/footer-illustration.png" class="footer-illustration">
 		<div class="footer-links">
 			<a href="https://dribbble.com/SLRNCL" target="_blank">Dribbble</a>
 			<a href="https://www.behance.net/SLRNCL" target="_blank">Behance</a>
@@ -20,11 +21,7 @@
 			<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank">Linkedin</a>
 		</div>
 		<p class="copy">
-<<<<<<< HEAD
-			&copy; 2012-<?php echo date("Y"); ?>. All trademarks belong to their respective owners. All rights reserved.
-=======
 		&copy; <?php echo date("Y"); ?> Nicolas Solerieu.
->>>>>>> origin/master
 			<a href="<?php echo get_permalink(76); ?>" >Informations</a>
 		</p>
 	</div>
