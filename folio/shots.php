@@ -18,7 +18,6 @@ get_header(); ?>
 <!-- CONTENT -->
 <section class="content-page">
 	<div class="wrapper">
-		<div class="box">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,7 +25,6 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 		
-		</div>
 	</div>
 </section>
 
@@ -49,11 +47,11 @@ get_header(); ?>
 		<a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" class="lightbox gallery-item" title="<?php echo get_the_title(); ?>">
 			<figure>
 				<div class="one-shot__thumb">
-					<div class="overlay-shot"><i class="fa fa-plus"></i></div>
+					<div class="overlay-shot"><i class="fa fa-search"></i></div>
 					<?php the_post_thumbnail('large',''); ?>
 				</div>
 				<figcaption>
-					<h4><?php echo get_the_title(); ?></h4>
+					<h3><?php echo get_the_title(); ?></h3>
 				</figcaption>
 			</figure>
 		</a>

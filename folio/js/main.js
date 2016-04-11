@@ -7,36 +7,35 @@ $(document).ready(function() {
   $('.lightbox').magnificPopup({
     type: 'image',
     mainClass: 'mfp-fade', 
-
     // Gallery mode
     gallery:{
       enabled:true
     },
-
   });
 
 });
 
-// --------------------------------------------------------- //
-// OPEN RESPONSIVE MENU
-// --------------------------------------------------------- //
-$('.one-article__title').click(function(){
-  $(this).next().slideToggle(600);
-  $(this).toggleClass('unwrapped');
+$(window).load(function() {
+  $('.home #page').addClass('loaded');
+  $('.site-header').addClass('displayed');
 });
 
 // --------------------------------------------------------- //
 // OPEN RESPONSIVE MENU
 // --------------------------------------------------------- //
-$('.responsive-menu-bt').click(function(){
+$('.menu-bt').click(function(){
   $('.site-nav').addClass('opened');
-  $('.close-responsive-menu-bt').show();
+  $('.overlay-black').addClass('displayed');
 });
 
 // --------------------------------------------------------- //
 // CLOSE APPSTORE FRAME
 // --------------------------------------------------------- //
-$('.close-responsive-menu-bt').click(function(){
+$('.close-menu-bt').click(function(){
   $('.site-nav').removeClass('opened');
-  $('.close-responsive-menu-bt').hide();
+  $('.overlay-black').removeClass('displayed');
+});
+$('.overlay-black').click(function(){
+  $('.site-nav').removeClass('opened');
+  $('.overlay-black').removeClass('displayed');
 });
