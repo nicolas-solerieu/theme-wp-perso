@@ -19,23 +19,3 @@ $(window).load(function() {
   $('.home #page').addClass('loaded');
   $('.site-header').addClass('displayed');
 });
-
-// --------------------------------------------------------- //
-// OPEN RESPONSIVE MENU
-// --------------------------------------------------------- //
-$('.menu-bt').click(function(){
-  $('.site-nav').addClass('opened');
-  $('.overlay-black').addClass('displayed');
-});
-
-// --------------------------------------------------------- //
-// CLOSE APPSTORE FRAME
-// --------------------------------------------------------- //
-$('.close-menu-bt').click(function(){
-  $('.site-nav').removeClass('opened');
-  $('.overlay-black').removeClass('displayed');
-});
-$('.overlay-black').click(function(){
-  $('.site-nav').removeClass('opened');
-  $('.overlay-black').removeClass('displayed');
-});
