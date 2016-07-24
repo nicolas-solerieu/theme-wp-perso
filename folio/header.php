@@ -52,7 +52,9 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<!-- FONT -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500' rel='stylesheet' type='text/css'>
 
 	<!-- CSS Zone -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" >
@@ -90,18 +92,23 @@
 <!-- HEADER -->
 <header class="site-header">
 	<div class="wrapper">
-		<div class="site-infos" onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo">
+
+		<div class="left-col">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>" class="logo-header"  onclick="document.location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
 		</div>
-		<nav class="nav-links">
-			<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
-			<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
-			<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
-			<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
-			<!--<a class="site-nav-link <?php if ( is_page( 239 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(239); ?>" >Contact</a>-->
-		</nav>
+
+		<div class="right-col">
+			<nav class="nav-links">
+				<a class="site-nav-link <?php if ( is_front_page() ) { echo 'active'; } ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" >Works</a>
+				<a class="site-nav-link <?php if ( is_page( 4 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(4); ?>" >About</a>
+				<a class="site-nav-link <?php if ( is_page( 78 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(78); ?>" >Shots</a>
+				<a class="site-nav-link <?php if ( is_home() ) { echo 'active'; } ?>" href="<?php echo get_permalink(43); ?>" >Journal</a>
+				<!--<a class="site-nav-link <?php if ( is_page( 239 ) ) { echo 'active'; } ?>" href="<?php echo get_permalink(239); ?>" >Contact</a>-->
+			</nav>
+		</div>
+
+		<div class="clear"></div>
+
 	</div>
 </header>
 
-<!-- MAIN -->
-<main class="main-wrap">

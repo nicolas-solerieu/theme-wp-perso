@@ -15,59 +15,66 @@
 
 get_header(); ?>
 
-<!-- CONTENT -->
-<section class="content-page">
-	<div class="wrapper">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<div class="entry-content"><?php the_content(); ?></div>
-
-		<?php endwhile; // End of the loop. ?>
-		
-	</div>
-</section>
-
 <!-- SHOTS -->
-<section class="shots">
+<div class="section">
+
 	<div class="wrapper">
-		<div class="box">
-		
-<?php
-	$args = array( 'post_type' => 'shot', 'order' => 'DESC', 'posts_per_page' => 10); 
-	$loop = new WP_Query( $args );
-	?>
 
-	<?php if($loop->post_count != 0) { ?>
+		<div class="left-col">
+			<p class="left-col-title"><?php the_title(); ?></p>
+		</div>
 
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
- 		
-	<article class="one-shot" >
+		<div class="right-col">
 
-		<a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" class="lightbox gallery-item" title="<?php echo get_the_title(); ?>">
-			<figure>
-				<div class="one-shot__thumb">
-					<div class="overlay-shot"><i class="fa fa-search"></i></div>
-					<?php the_post_thumbnail('large',''); ?>
-				</div>
-				<figcaption>
-					<h3><?php echo get_the_title(); ?></h3>
-				</figcaption>
-			</figure>
-		</a>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-	</article>
+				<div class="entry-content"><?php the_content(); ?></div>
 
- 	<?php endwhile; ?>
+			<?php endwhile; // End of the loop. ?>
+			
+			<div class="shot-list">
+				<?php
+					$args = array( 'post_type' => 'shot', 'order' => 'DESC', 'posts_per_page' => 10); 
+					$loop = new WP_Query( $args );
+				?>
 
-	<?php } ?>
+				<?php if($loop->post_count != 0) { ?>
 
-<?php wp_reset_query(); ?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			 		
+				<article class="one-shot" >
+
+					<a class="lightbox gallery-item" href="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" title="<?php echo get_the_title(); ?>" >
+						<div class="thumb">
+							<div class="overlay-shot">
+								<i class="fa fa-search"></i>
+								<h3><?php echo get_the_title(); ?></h3>
+							</div>
+							<?php the_post_thumbnail('large',''); ?>
+						</div>
+					</a>
+
+				</article>
+
+			 	<?php endwhile; ?>
+
+				<?php } ?>
+
+				<?php wp_reset_query(); ?>
+
+				<div class="clear"></div>
+
+				<a href="https://dribbble.com/SLRNCL" target="_blank" class="btn" >All on dribbble</a>
+
+			</div>
+
+		</div><!-- / Right col -->
 
 		<div class="clear"></div>
 
-		</div>
+
+
 	</div>
-</section>
+</div>
 	
 <?php get_footer(); ?>

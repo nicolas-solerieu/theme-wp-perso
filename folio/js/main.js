@@ -14,8 +14,3 @@ $(document).ready(function() {
   });
 
 });
-
-$(window).load(function() {
-  $('.home #page').addClass('loaded');
-  $('.site-header').addClass('displayed');
-});

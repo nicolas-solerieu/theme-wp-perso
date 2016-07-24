@@ -10,22 +10,29 @@
 get_header(); ?>
 
 <!-- CONTENT -->
-<section class="content-page">
+<div class="section">
 	<div class="wrapper">
 
-		<?php while ( have_posts() ) : the_post(); ?>
-
-		<h4>You're about to read.</h4>
-		<p class="article-name"><?php the_title(); ?></p>
-		<div class="entry-content"><?php the_content(); ?></div>
-
-		<?php endwhile; ?>
-
-		<div class="post-nav">
-			<a href="<?php echo get_permalink(43); ?>" class="bt-back">Back to the journal <i class="fa fa-angle-right"></i></a>
+		<div class="left-col">
+			<i class="fa fa-hand-o-right side-icon" aria-hidden="true"></i>
 		</div>
 
+		<div class="right-col">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+			<p class="left-col-title">You're about to read</p>
+			<h2 class="article-name"><?php the_title(); ?></h2>
+
+			<div class="entry-content"><?php the_content(); ?></div>
+			<a href="<?php echo get_permalink(43); ?>" class="btn" >Back to the journal</a>
+
+			<?php endwhile; ?>
+		</div>
+
+		<div class="clear"></div>
+
 	</div><!-- / WRAPPER -->
-</section>
+</div>
 
 <?php get_footer(); ?>

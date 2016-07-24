@@ -14,17 +14,24 @@
 
 get_header(); ?>
 
-<!-- CONTENT -->
-<section class="content-page">
+<div class="section">
 	<div class="wrapper">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div class="left-col">
+			<p class="left-col-title"><?php the_title(); ?></p>
+		</div>
 
-			<div class="entry-content"><?php the_content(); ?></div>
+		<div class="right-col">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php endwhile; // End of the loop. ?>
-		
+				<div class="entry-content"><?php the_content(); ?></div>
+
+			<?php endwhile; // End of the loop. ?>
+		</div>
+
+		<div class="clear"></div>
+
 	</div>
-</section>
-	
+</div>
+
 <?php get_footer(); ?>

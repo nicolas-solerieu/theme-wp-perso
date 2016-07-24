@@ -9,18 +9,22 @@
 
 get_header(); ?>
 
-
-<!-- CONTENT -->
-<section class="content-404">
+<div class="section">
 	<div class="wrapper">
 
-		<h4>404 ERROR</h4>
+		<div class="left-col">
+			<p class="left-col-title">404</p>
+		</div>
 
-		<p class="headline">Oops! Something went wrong.</p>
+		<div class="right-col">
+			<p class="headline">Oops! Something went wrong.</p>
 		<p>You have found a glitch in the matrix, this page is not real !</p>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="contact-link" >Go back to home</a>
+		</div>
+
+		<div class="clear"></div>
 
 	</div>
-</section>
+</div>
 	
 <?php get_footer(); ?>

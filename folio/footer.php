@@ -8,21 +8,23 @@
 
 ?>
 
-</main><!-- / MAIN -->
-
 <!-- FOOTER -->
 <footer>
 	<div class="wrapper">
 		<div class="box">
-			<div class="footer-links">
-				<a href="https://dribbble.com/SLRNCL" target="_blank">Dribbble</a>
-				<a href="https://www.behance.net/SLRNCL" target="_blank">Behance</a>
-				<a href="https://github.com/nicolas-solerieu" target="_blank">Github</a>
-				<a href="https://www.linkedin.com/in/nicolas-solerieu-5791a343" target="_blank">Linkedin</a>
+		
+			<div class="left-col">
+				<i class="fa fa-hand-peace-o side-icon"></i>
 			</div>
-			<p class="copy">
-				&copy; 2012-<?php echo date("Y"); ?>. All rights reserved <a href="<?php echo get_permalink(76); ?>" >Informations</a>
-			</p>
+
+			<div class="right-col">
+				<p class="copy">
+					2012-<?php echo date("Y"); ?>. All rights reserved <a href="<?php echo get_permalink(76); ?>" >Informations</a>
+				</p>
+			</div>
+
+			<div class="clear"></div>
+
 		</div>
 	</div>
 </footer>

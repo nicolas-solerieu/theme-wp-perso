@@ -9,12 +9,7 @@
 
 get_header(); ?>
 
-<!-- TOP -->
-<section class="page-top">
-</section>
-
-<!-- CONTENT -->
-<section class="content-page">
+<div class="section">
 	<div class="wrapper">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -24,6 +19,6 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 	</div>
-</section>
+</div>
 
 <?php get_footer(); ?>

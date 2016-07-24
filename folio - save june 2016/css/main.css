@@ -1,0 +1,608 @@
+/*
+
+///////////////////////////////////////////////////////
+
+
+//////   ///     ///////   ////    //   ///////   ///
+///      ///     ///  //   /// /   //   //        ///
+//////   ///     ///////   ///  /  //   //        ///
+    //   ///     /// //    ///   / //   //        ///
+//////   //////  ///  //   ///    ///   ///////   //////
+
+
+////////////////////////////////////////////////////////
+
+Domain: solerieu-nicolas.fr
+Author: Nicolas Solerieu
+Description: _
+Version: 1.0
+
+/* -------------------------------------------------------------- 
+/* =BASIS
+-------------------------------------------------------------- */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+::selection {
+  color: #333333;
+  background: #fff4cc;
+}
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* -------------------------------------------------------------- 
+/* =ESSENTIAL CLASSES
+-------------------------------------------------------------- */
+figure {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.wrapper {
+  width: 720px;
+  margin: 0 auto;
+}
+.error404 .main-wrap {
+  background: url('../img/dot-pattern.svg');
+}
+.content-404  {
+  padding: 220px 0 200px 0;
+  text-align: center;
+}
+.content-page {
+  padding: 150px 0 80px 0; 
+}
+
+/* -------------------------------------------------------------- 
+/* =TYPOGRAPHY
+-------------------------------------------------------------- */
+p {
+  color: #666666;
+  margin: 10px 0 30px 0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+  color: #999999;
+  border-bottom: 1px solid #e8e8e8;
+  outline: none;
+  transition:all ease 0.3s;
+}
+a:hover {
+  background: #fff4cc;
+  color: #333333;
+  border-bottom: 1px solid transparent;
+}
+h3 {
+  margin: 0;
+  color: #333333;
+  font-size: 1.8em;
+}
+h4 {
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 900;
+}
+h5 {
+  color: #333333;
+  font-size: 1em;
+  margin: 15px 0;
+}
+pre {
+	background: #f0f0f0;
+	color: #333333;
+	font-size: 1em;
+	line-height: 150%;
+	border-radius: 4px;
+	margin: 10px 0;
+	display: inline-block;
+	width: 100%;
+	padding: 30px;
+}
+/* -------------------------------------------------------------- 
+/* =HEADER
+-------------------------------------------------------------- */
+.site-header {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  top: -30px;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -moz-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -o-transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.site-header.displayed {
+  top: 0;
+  opacity: 1;
+}
+/* TOP LEFT SITE INFOS */
+.site-infos {
+  height: 25px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.site-infos:hover .logo {
+  opacity: 0.3;
+}
+.site-infos .logo {
+  width: auto;
+  height: 25px;
+  position: relative;
+  margin: 0;
+  transition:all ease 0.3s;
+  -webkit-transition:all ease 0.3s;
+  -moz-transition:all ease 0.3s;
+  -o-transition:all ease 0.3s;
+}
+/* SITE NAV */
+.nav-links {
+  float: left;
+  border-left: 1px solid #f0f0f0;
+  margin: 0 0 0 20px;
+  height: 25px;
+}
+.site-nav-link {
+  display: inline-block;
+  border: 0;
+  margin: 0 0 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0;
+  color: #999999;
+  transition: color ease 0.3s;
+}
+.site-nav-link.active {
+  color: #333333;
+}
+.site-nav-link:hover {
+  color: #333333;
+  border: 0;
+  background-color: transparent;
+}
+
+
+/* -------------------------------------------------------------- 
+/* =INTRO - ABOUT
+-------------------------------------------------------------- */
+.about {
+  padding: 160px 0 20px 0;
+}
+.profile-block__avatar {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-block__avatar img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.profile-block__details {
+  float: left;
+  margin: 0 0 0 15px;
+}
+.profile-block__details h1.site-name {
+  font-size: 16px;
+  margin: 4px 0;
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+}
+.profile-block__details h2.job-title {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  color: #888888;
+}
+.headline {
+  font-size: 32px;
+  color: #333333;
+  margin: 40px 0;
+}
+.hero-links {
+  margin: 0 0 40px 0;
+}
+.hero-links a {
+  border: 0;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  font-weight: 400;
+}
+.hero-links a:hover {
+  background: transparent;
+}
+.hero-links a i {
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
+
+/* -------------------------------------------------------------- 
+/* =ENTRY CONTENT
+-------------------------------------------------------------- */
+.half-width {
+  width: 50%;
+  float: left;
+  padding: 0 40px 0 0;
+}
+.full-width {
+  width: 100%;
+  float: left;
+}
+.third-width {
+  width: 33.33%;
+  float: left;
+  padding: 0 40px 0 0;
+}
+.small-text {
+  font-size: 14px;
+}
+.big-text {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  line-height: 170%;
+  color: #333333;
+}
+.right-col {
+  width: 66.66%;
+  float: left;
+}
+.left-col {
+  width: 33.33%;
+  float: left;
+}
+.entry-content h2 {
+  font-size: 2.2em;
+  color: #333333;
+  font-weight: 300;
+}
+
+/* -------------------------------------------------------------- 
+/* =JOURNAL
+-------------------------------------------------------------- */
+.journal-feed {
+  padding: 0 0 40px 0;
+}
+.one-article {
+  padding: 40px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.one-article__title {
+  cursor: pointer;
+}
+.one-article__title::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.one-article__title h3 {
+  font-size: 1.5em;
+  font-weight:300;
+  margin: 0;
+}
+.one-article__title p {
+  margin: 0;
+  color: #999999;
+  font-size: 12px;
+}
+.one-article__content {
+  padding: 20px 0 0 0;
+}
+.one-article__content a {
+  display: inline-block;
+  font-size: 14px;
+}
+.article-name {
+  color: #333333;
+  font-size: 2.4em;
+}
+.post-nav {
+  padding: 30px 0 0 0;
+}
+.bt-back {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  border: 0;
+}
+.bt-back i {
+	margin: 0 0 0 5px;
+	display: inline-block;
+}
+.bt-back:hover {
+  border: 0;
+}
+
+/* -------------------------------------------------------------- 
+/* =SHOTS
+-------------------------------------------------------------- */
+.one-shot {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+}
+.one-shot:nth-child(2n) {
+	margin: 0 0 20px 4%;
+}
+.one-shot figure .one-shot__thumb {
+  position: relative;
+}
+.one-shot figure .overlay-shot {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: #fff4cc;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition:all ease 0.6s;
+  -webkit-transition:all ease 0.6s;
+  -moz-transition:all ease 0.6s;
+  -o-transition:all ease 0.6s;
+}
+.one-shot figure .overlay-shot i {
+  position: absolute;
+  z-index: 3;
+  top: 60%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: -15px 0 0 -15px;
+  color: #333333;
+  opacity: 0;
+  transition:all 0.3s ease 0.3s;
+  -webkit-transition:all 0.3s ease 0.3s;
+  -moz-transition:all 0.3s ease 0.3s;
+  -o-transition:all 0.3s ease 0.3s;
+}
+.one-shot:hover figure .overlay-shot {
+  opacity: 1;
+}
+.one-shot:hover figure .overlay-shot i {
+  opacity: 1;
+  top: 50%;
+}
+.one-shot figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.one-shot figure figcaption {
+  padding: 15px 0;
+}
+.one-shot figure figcaption h3 {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+.mfp-image-holder .mfp-content {
+  max-width: 800px;
+}
+
+
+
+/* -------------------------------------------------------------- 
+/* =WORKS
+-------------------------------------------------------------- */
+.works {
+  padding: 60px 0;
+}
+.label-works {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+  color: #999999;
+}
+.one-work {
+  margin: 0;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  cursor: pointer;
+  position: relative;
+  color: #666666;
+  transition: all ease 0.3s;
+}
+.one-work .number {
+  font-size: 1em;
+  text-align: left;
+  display: inline-block;
+  color: #666666;
+  display: inline-block;
+  position: relative;
+}
+.one-work .number::before {
+  height: 2px;
+  width: 0;
+  left: 0;
+  top: 50%;
+  background: #d2d2d2;
+  position: absolute;
+  transition:all ease 0.3s;
+  content: '';
+}
+.one-work:hover .number::before {
+  width: 100%;
+}
+.one-work h4 {
+  margin: 0 10px;
+  font-size:1.8em;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #333333;
+  display: inline-block;
+  transition:all ease 0.3s;
+}
+.one-work:hover h4 {
+  background: #fff4cc;
+}
+.one-work .work-desc {
+  display: inline-block;
+  color: #666666;
+  margin: 0;
+}
+
+
+/* -------------------------------------------------------------- 
+/* =FOOTER
+-------------------------------------------------------------- */
+footer  {
+  padding: 30px 0 60px 0;
+  margin: 0;
+}
+footer .box {
+  padding: 60px 0 0 0;
+  border-top: 1px solid #f0f0f0;
+}
+.footer-links {
+  margin: 0;
+}
+.footer-links a {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  color: #333333;
+  font-size: 15px;
+  transition:color ease 0.3s;
+}
+footer .copy {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+  margin: 20px 0 0 0;
+}
+
+
+
+
+/* -------------------------------------------------------------- 
+/* =RESPONSIVE / SCREEN UNDER 700PX
+-------------------------------------------------------------- */
+@media screen and (max-width: 780px) {
+.wrapper,
+.thin-wrapper {
+  width: 86%;
+  margin: 0 7%;
+}
+.one-article__title h3 {
+  font-size: 1.4em;
+}
+.about {
+  padding: 140px 0 40px 0;
+}
+p {
+  font-size: 14px;
+}
+.headline {
+  font-size:20px;
+  margin: 30px 0;
+}
+.big-text {
+  font-size: 1em;
+  line-height: 170%;
+}
+.left-col, .right-col {
+  width: 100%;
+}
+.works {
+  padding: 30px 0 0 0;
+}
+.one-work,
+.one-work:nth-child(2n) {
+  width: 100%;
+  margin: 0 0 40px 0;
+  border: 0;
+  padding: 0;
+}
+.one-work:hover {
+  border: 0;
+}
+.one-work h4 {
+  margin: 10px 0 0 0;
+  font-size: 1.4em;
+}
+.one-work .number {
+  display: block;
+  font-size: 12px;
+}
+.one-work .work-desc {
+  margin: 0;
+  display: block;
+}
+.half-width {
+  width: 100%;
+  padding: 0;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 15px 0;
+}
+.one-shot {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.one-shot:nth-child(2n) {
+	margin: 0 0 20px 0;
+}
+.one-work:hover .number::before {
+  width: 0%;
+}
+.content-page {
+  padding: 130px 0 50px 0;
+}
+footer {
+  text-align: left;
+}
+.footer-links a {
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px;
+}
+.hero-links a {
+  width: 100%;
+  margin: 5px 0;
+}
+
+
+}
+
+
